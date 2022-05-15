@@ -172,11 +172,13 @@ class TicTacToeViewController: UIViewController {
             let alert = UIAlertController(title: "Felicidades", message: "Ha ganado el jugador 1", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
+            playerArray[0].scoreTicTacToe += 1
         }
         else if(score2 == 2){
             let alert = UIAlertController(title: "Felicidades", message: "Ha ganado el jugador 2", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
+            playerArray[1].scoreTicTacToe += 1
         }
                 
     }
