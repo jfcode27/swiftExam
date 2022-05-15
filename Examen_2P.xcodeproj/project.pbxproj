@@ -16,6 +16,10 @@
 		792CEEB82825CB3900892612 /* Examen_2PTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792CEEB72825CB3900892612 /* Examen_2PTests.swift */; };
 		792CEEC22825CB3900892612 /* Examen_2PUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792CEEC12825CB3900892612 /* Examen_2PUITests.swift */; };
 		792CEEC42825CB3900892612 /* Examen_2PUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792CEEC32825CB3900892612 /* Examen_2PUITestsLaunchTests.swift */; };
+		797BD0FC2829F08200C027D5 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797BD0FB2829F08100C027D5 /* Player.swift */; };
+		797BD0FE2830BCCB00C027D5 /* TicTacToeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797BD0FD2830BCCB00C027D5 /* TicTacToeViewController.swift */; };
+		79D9667F2829CF6400195291 /* SFAlienEncounters-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79D9667D2829AEC000195291 /* SFAlienEncounters-Italic.ttf */; };
+		79D966802829CF6800195291 /* SFAlienEncounters.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79D9667E2829AEC000195291 /* SFAlienEncounters.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		792CEEBD2825CB3900892612 /* Examen_2PUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Examen_2PUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		792CEEC12825CB3900892612 /* Examen_2PUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examen_2PUITests.swift; sourceTree = "<group>"; };
 		792CEEC32825CB3900892612 /* Examen_2PUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examen_2PUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		797BD0FB2829F08100C027D5 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		797BD0FD2830BCCB00C027D5 /* TicTacToeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeViewController.swift; sourceTree = "<group>"; };
+		79D9667D2829AEC000195291 /* SFAlienEncounters-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFAlienEncounters-Italic.ttf"; sourceTree = "<group>"; };
+		79D9667E2829AEC000195291 /* SFAlienEncounters.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFAlienEncounters.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +107,16 @@
 		792CEE9F2825CB3800892612 /* Examen_2P */ = {
 			isa = PBXGroup;
 			children = (
+				79D9667C2829AE9E00195291 /* fonts */,
 				792CEEA02825CB3800892612 /* AppDelegate.swift */,
 				792CEEA22825CB3800892612 /* SceneDelegate.swift */,
 				792CEEA42825CB3800892612 /* ViewController.swift */,
+				797BD0FB2829F08100C027D5 /* Player.swift */,
 				792CEEA62825CB3800892612 /* Main.storyboard */,
 				792CEEA92825CB3900892612 /* Assets.xcassets */,
 				792CEEAB2825CB3900892612 /* LaunchScreen.storyboard */,
 				792CEEAE2825CB3900892612 /* Info.plist */,
+				797BD0FD2830BCCB00C027D5 /* TicTacToeViewController.swift */,
 			);
 			path = Examen_2P;
 			sourceTree = "<group>";
@@ -125,6 +136,15 @@
 				792CEEC32825CB3900892612 /* Examen_2PUITestsLaunchTests.swift */,
 			);
 			path = Examen_2PUITests;
+			sourceTree = "<group>";
+		};
+		79D9667C2829AE9E00195291 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				79D9667D2829AEC000195291 /* SFAlienEncounters-Italic.ttf */,
+				79D9667E2829AEC000195291 /* SFAlienEncounters.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +252,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				792CEEAD2825CB3900892612 /* LaunchScreen.storyboard in Resources */,
+				79D966802829CF6800195291 /* SFAlienEncounters.ttf in Resources */,
 				792CEEAA2825CB3900892612 /* Assets.xcassets in Resources */,
 				792CEEA82825CB3800892612 /* Main.storyboard in Resources */,
+				79D9667F2829CF6400195291 /* SFAlienEncounters-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				797BD0FC2829F08200C027D5 /* Player.swift in Sources */,
 				792CEEA52825CB3800892612 /* ViewController.swift in Sources */,
+				797BD0FE2830BCCB00C027D5 /* TicTacToeViewController.swift in Sources */,
 				792CEEA12825CB3800892612 /* AppDelegate.swift in Sources */,
 				792CEEA32825CB3800892612 /* SceneDelegate.swift in Sources */,
 			);
