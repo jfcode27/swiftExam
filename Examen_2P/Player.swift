@@ -6,6 +6,8 @@
 //
 
 import UIKit
+var playerArray : [Player] = [player1]
+var player1 = Player(name: "Jeremy", scoreHangman: 0, scoreTrivia: 0, scoreTicTacToe: 0, user: "player1", password: "pass1" )
 
 class Player{
     var name: String;

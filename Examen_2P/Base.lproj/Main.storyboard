@@ -43,7 +43,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="EKO-sd-AxJ" kind="show" id="9xh-Vp-5Im"/>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="alm-0p-NFU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Swiftgames" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgl-tQ-6VF">
@@ -55,11 +55,11 @@
                                 <color key="shadowColor" red="1" green="0.16841727275063256" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v3L-QU-G70">
-                                <rect key="frame" x="90" y="362" width="234" height="41"/>
+                                <rect key="frame" x="90" y="362" width="234" height="39"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -88,6 +88,7 @@
                     <connections>
                         <outlet property="txtPassword" destination="v3L-QU-G70" id="4DC-VE-8Va"/>
                         <outlet property="txtUser" destination="j0U-dm-5LH" id="dXo-zN-oOA"/>
+                        <segue destination="EKO-sd-AxJ" kind="show" identifier="LoginSegue" id="7aG-zf-ceN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
